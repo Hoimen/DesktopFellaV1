@@ -1,0 +1,560 @@
+[gd_scene load_steps=45 format=3 uid="uid://7n7k2cdvdm6y"]
+
+[ext_resource type="Script" uid="uid://b04nk5klnoxh4" path="res://Scenes/lil_guye.gd" id="1_wkakj"]
+[ext_resource type="Texture2D" uid="uid://by8i5s6081it5" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085146.png" id="2_7d57l"]
+[ext_resource type="Script" uid="uid://coxdutk2021x3" path="res://ReactToFilePickUp.gd" id="2_gjuin"]
+[ext_resource type="Texture2D" uid="uid://ba0cb4k0kdood" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085142.png" id="3_gjuin"]
+[ext_resource type="Texture2D" uid="uid://lk35lgi7hcr" path="res://Desktop Buddie Sprites/Little Fella Sleep 1.png" id="3_ywjox"]
+[ext_resource type="Texture2D" uid="uid://cisqetm4jeo8j" path="res://Desktop Buddie Sprites/Pet/Pet 1.png" id="4_8yf5v"]
+[ext_resource type="Texture2D" uid="uid://ciacvjde0yprp" path="res://Desktop Buddie Sprites/Sleep/Sleep 1.png" id="4_327hf"]
+[ext_resource type="Texture2D" uid="uid://40pn6xhsvx5y" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085154.png" id="4_e6hni"]
+[ext_resource type="Texture2D" uid="uid://df3qjd80ehl87" path="res://Desktop Buddie Sprites/NutralTalkFemail/TalkNurtalFemail1 1.png" id="4_r63at"]
+[ext_resource type="Texture2D" uid="uid://b1638ra5j50kv" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 1.png" id="4_usqrm"]
+[ext_resource type="Texture2D" uid="uid://b1lufm5f2nv2n" path="res://Desktop Buddie Sprites/Sleep/Sleep 2.png" id="5_6b4hn"]
+[ext_resource type="Texture2D" uid="uid://bv7ocncx6jxyt" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 2.png" id="5_sb31w"]
+[ext_resource type="Texture2D" uid="uid://cdmraw2ugtrul" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085135.png" id="5_t6gb6"]
+[ext_resource type="Texture2D" uid="uid://cy5v30v0mx8sg" path="res://Desktop Buddie Sprites/Sleep/Sleep 3.png" id="6_7ohf0"]
+[ext_resource type="Texture2D" uid="uid://kb4y8myt46fj" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015520.png" id="6_dgf5b"]
+[ext_resource type="Texture2D" uid="uid://cpuhp6gxa622h" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 3.png" id="6_in86l"]
+[ext_resource type="Texture2D" uid="uid://vrlqh46pouqd" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 4.png" id="7_4lqnn"]
+[ext_resource type="Texture2D" uid="uid://co7qmqfulu86m" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015528.png" id="7_uqi2x"]
+[ext_resource type="Texture2D" uid="uid://n8klyxodb6os" path="res://Desktop Buddie Sprites/Sleep/Sleep 4.png" id="7_wvsfo"]
+[ext_resource type="Texture2D" uid="uid://g23nnonk2p6s" path="res://Desktop Buddie Sprites/Sleep/Sleep 5.png" id="8_c2ema"]
+[ext_resource type="Texture2D" uid="uid://by8uf5q7es1nr" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015538.png" id="8_if37q"]
+[ext_resource type="Texture2D" uid="uid://bvj1e4uai6nqh" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 5.png" id="8_vokjj"]
+[ext_resource type="Texture2D" uid="uid://bi8uq75cxg0r5" path="res://Desktop Buddie Sprites/tryangleDown.png" id="9_5dhrw"]
+[ext_resource type="Texture2D" uid="uid://jv8nradyrmv6" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 6.png" id="9_8yf5v"]
+[ext_resource type="Texture2D" uid="uid://qcbkmn5iu206" path="res://Desktop Buddie Sprites/Sleep/Sleep 6.png" id="9_jq8ip"]
+[ext_resource type="Script" uid="uid://bki1cvhowv6t5" path="res://addons/gopilot_utils/classes/chat_requester.gd" id="9_uqi2x"]
+[ext_resource type="Texture2D" uid="uid://b70m3lqs1ayal" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015555.png" id="9_ywjox"]
+[ext_resource type="Script" uid="uid://280smi7vsmt6" path="res://Scenes/MouseLocation.gd" id="10_5dhrw"]
+[ext_resource type="Texture2D" uid="uid://dui22tuogn0ey" path="res://Desktop Buddie Sprites/Sleep/Sleep 7.png" id="10_usqrm"]
+[ext_resource type="Texture2D" uid="uid://cp0hixxcivy65" path="res://Desktop Buddie Sprites/Sleep/Sleep 8.png" id="11_sb31w"]
+[ext_resource type="Script" uid="uid://bcll66ou1xhnk" path="res://SleepAnimation.gd" id="12_in86l"]
+[ext_resource type="Texture2D" uid="uid://d1iwx2in21jti" path="res://Desktop Buddie Sprites/Down/Down 1.png" id="12_vokjj"]
+[ext_resource type="Script" uid="uid://lib7wkqbiakl" path="res://PetlilFella.gd" id="13_e6hni"]
+[ext_resource type="Texture2D" uid="uid://cqua7it7l4i2j" path="res://Desktop Buddie Sprites/Left/Left 1.png" id="14_in86l"]
+[ext_resource type="Texture2D" uid="uid://t4ebqfpbrbtf" path="res://Desktop Buddie Sprites/Right/Right 1.png" id="15_4lqnn"]
+[ext_resource type="Script" uid="uid://brnnmw1cxlqn0" path="res://FollowWindow.gd" id="15_dgf5b"]
+[ext_resource type="Texture2D" uid="uid://cihlw8a5pjyb6" path="res://Desktop Buddie Sprites/Up/Up 1.png" id="16_4lqnn"]
+[ext_resource type="Texture2D" uid="uid://b3127h2nnntcw" path="res://Desktop Buddie Sprites/1 white png.png" id="16_uqi2x"]
+[ext_resource type="Texture2D" uid="uid://cssqqotld08fq" path="res://Desktop Buddie Sprites/temparrow2.png" id="17_if37q"]
+[ext_resource type="Script" uid="uid://cplmo3cfppg45" path="res://TestForOpenRouter.gd" id="29_8bpdn"]
+[ext_resource type="Script" uid="uid://dliisk3n5jxsj" path="res://DebugTestForOpenRouter.gd" id="32_jlnog"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ywjox"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_r63at")
+}],
+"loop": true,
+"name": &"NutralTalkFemail",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8yf5v")
+}],
+"loop": true,
+"name": &"Pet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_327hf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6b4hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7ohf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wvsfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c2ema")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jq8ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_usqrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sb31w")
+}],
+"loop": true,
+"name": &"Sleep",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vokjj")
+}],
+"loop": true,
+"name": &"held_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_4lqnn")
+}],
+"loop": true,
+"name": &"held_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_in86l")
+}],
+"loop": true,
+"name": &"held_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_4lqnn")
+}],
+"loop": true,
+"name": &"held_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_usqrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sb31w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_in86l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4lqnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vokjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8yf5v")
+}],
+"loop": true,
+"name": &"normal_hold",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_t6gb6"]
+script/source = "extends VBoxContainer   # CODE IS BROKEN sends openrouter msg twice
+
+@export var conversation: RichTextLabel
+@export var prompt: LineEdit
+@export var chat: ChatRequester
+
+# Defalt mode
+enum Mode { LOCAL, OPENROUTER }
+@export var default_mode: Mode = Mode.LOCAL
+
+# Local or just Ollama 
+@export var local_host: String = \"http://127.0.0.1\" # Your ip, ha ha i hacked you
+@export var local_port: int = 11434
+@export var local_model: String = \"llama3.2\"
+@export var local_temperature: float = 0.2
+
+# Open router
+@export var or_api_key: String = \"\"
+@export var or_model: String = \"openai/gpt-4o-mini\"
+@export var or_temperature: float = 0.2
+@export var or_max_tokens: int = 256                # keeps cost tiny because im poor
+@export var or_http_referer: String = \"\"            # optional
+@export var or_title: String = \"\"                   # optional
+
+var _mode: Mode
+var _buffer: String = \"\"
+var _is_warmup: bool = false
+
+func _ready() -> void:
+	if conversation == null or prompt == null or chat == null:
+		push_error(\"Hook up 'conversation', 'prompt', and 'chat' in the Inspector.\")
+		return
+
+	conversation.bbcode_enabled = true
+	_mode = default_mode
+
+	_apply_mode()
+	prompt.text_submitted.connect(_on_submit)
+	chat.new_word.connect(_on_word)
+	chat.message_end.connect(_on_end)
+
+func _unhandled_input(event: InputEvent) -> void:
+	# Press F1 to toggle Local/OpenRouter
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F1:
+		_mode = (Mode.OPENROUTER if _mode == Mode.LOCAL else Mode.LOCAL)
+		_apply_mode() # must be in text box to activate F1
+		var mode_name := (\"Local (Ollama)\" if _mode == Mode.LOCAL else \"OpenRouter\")
+		_append_system(\"Switched to %s\" % mode_name)
+
+func _apply_mode() -> void:
+	if _mode == Mode.LOCAL:
+		chat.set_provider(\"ollama\", true)
+		chat.host = local_host
+		chat.port = local_port
+		chat.model = local_model
+		chat.temperature = local_temperature
+		chat.api_key = \"\"
+		chat.options = {}
+	else:
+		chat.set_provider(\"openrouter\", true)  # omg my openrouter.gd provider was usefull 
+		chat.api_key = or_api_key
+		chat.model = or_model
+		chat.temperature = or_temperature
+		chat.options = {\"max_tokens\": or_max_tokens}
+		if or_http_referer != \"\":
+			chat.options[\"http_referer\"] = or_http_referer
+		if or_title != \"\":
+			chat.options[\"x_title\"] = or_title
+	_warmup()
+
+func _warmup() -> void:
+	_is_warmup = true
+	chat.send_message(\"\")            # primes the connection/ i dont think this actually works lol
+	await get_tree().create_timer(0.3).timeout
+	_is_warmup = false
+
+func _on_submit(text: String) -> void:
+	var t := text.strip_edges()
+	if t.is_empty():
+		return
+	_buffer = \"\"
+	conversation.append_text(\"\\n[b]You:[/b] %s\\n\" % t)
+	chat.send_message(t)
+	chat.start_response()
+	prompt.clear()
+
+func _on_word(w: String) -> void:
+	if _is_warmup:
+		return
+	_buffer += w
+
+func _on_end(_full: String) -> void:
+	var tag := (\"Local\" if _mode == Mode.LOCAL else \"OpenRouter\")
+	conversation.append_text(\"[color=#88f]%s:[/color] %s\\n\" % [tag, _buffer]) #88f is the color change later 
+	conversation.scroll_to_line(conversation.get_line_count())
+
+func _append_system(msg: String) -> void:
+	conversation.append_text(\"\\n[System] %s\\n\" % msg)
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_if37q"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 7
+border_width_right = 7
+border_color = Color(0.83, 0, 0.525667, 0)
+
+[node name="Window" type="Window" node_paths=PackedStringArray("animated_sprite", "content_root", "drag_panel_container", "drag_when_held_panel", "text_window")]
+transparent_bg = true
+initial_position = 4
+size = Vector2i(450, 450)
+borderless = true
+always_on_top = true
+transparent = true
+script = ExtResource("1_wkakj")
+animated_sprite = NodePath("Node/HeldSprites/Drag when panne held/Dizzy")
+content_root = NodePath("Node/Node2/Content root")
+drag_panel_container = NodePath("Node/Contact Pannels/Drag pannel container")
+drag_when_held_panel = NodePath("Node/HeldSprites/Drag when panne held")
+text_window = NodePath("Node/Window")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="Node" node_paths=PackedStringArray("drop_sprite")]
+script = ExtResource("2_gjuin")
+drop_sprite = NodePath("Content root/FolderPickUp")
+
+[node name="VisualWIndowBorder" type="PanelContainer" parent="Node/Node2"]
+visible = false
+offset_left = -37.0
+offset_top = -11.0
+offset_right = 3.0
+offset_bottom = 29.0
+scale = Vector2(13.12, 11.76)
+
+[node name="Content root" type="PanelContainer" parent="Node/Node2"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Sleep2" type="Sprite2D" parent="Node/Node2/Content root"]
+visible = false
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+texture = ExtResource("3_ywjox")
+
+[node name="Sleep" type="AnimatedSprite2D" parent="Node/Node2/Content root" node_paths=PackedStringArray("sprite_sleep")]
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_ywjox")
+animation = &"Sleep"
+frame_progress = 0.42397
+script = ExtResource("12_in86l")
+sprite_sleep = NodePath(".")
+
+[node name="Pet" type="Sprite2D" parent="Node/Node2/Content root"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(251, 256)
+texture = ExtResource("2_7d57l")
+
+[node name="Sleep3" type="AnimatedSprite2D" parent="Node/Node2/Content root/Pet"]
+position = Vector2(-26.8182, -44)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_ywjox")
+animation = &"Pet"
+
+[node name="NotHeld" type="Sprite2D" parent="Node/Node2/Content root"]
+visible = false
+modulate = Color(0, 0.8513, 0.147146, 1)
+position = Vector2(250, 250)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_gjuin")
+
+[node name="FolderPickUp" type="Sprite2D" parent="Node/Node2/Content root"]
+visible = false
+modulate = Color(0.953792, 0.970755, 0, 1)
+position = Vector2(252, 260)
+scale = Vector2(1.15, 1.15)
+texture = ExtResource("4_e6hni")
+
+[node name="Held" type="Sprite2D" parent="Node/Node2/Content root"]
+visible = false
+modulate = Color(0.995683, 0.392192, 0.32956, 1)
+position = Vector2(251, 254)
+texture = ExtResource("5_t6gb6")
+
+[node name="Chat" type="Control" parent="Node/Node2/Content root"]
+layout_mode = 2
+script = ExtResource("29_8bpdn")
+
+[node name="ChatExample" type="HBoxContainer" parent="Node/Node2/Content root/Chat"]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 450.0
+
+[node name="Chat" type="VBoxContainer" parent="Node/Node2/Content root/Chat/ChatExample" node_paths=PackedStringArray("conversation", "prompt", "chat")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_t6gb6")
+conversation = NodePath("../../../../../Window/RichTextLabel")
+prompt = NodePath("HBoxContainer/Prompt")
+chat = NodePath("Control/Ai Girlfriend")
+or_http_referer = "https://github.com/Hoimen/DesktopFella1"
+or_title = "DesktopFella"
+
+[node name="Conversation" type="RichTextLabel" parent="Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Button3" type="Button" parent="Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Prompt" type="LineEdit" parent="Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Talk to me HERE"
+
+[node name="Button" type="Button" parent="Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Button2" type="Button" parent="Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="1WhitePng" type="Sprite2D" parent="Node/Node2/Content root/Chat/ChatExample/Chat"]
+visible = false
+modulate = Color(0.000113828, 0.000113828, 0.000113828, 1)
+position = Vector2(224.75, 80)
+scale = Vector2(4.9086, 1.88636)
+texture = ExtResource("16_uqi2x")
+
+[node name="Control" type="Control" parent="Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+
+[node name="Desktop fella" type="Node" parent="Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("9_uqi2x")
+system_prompt = "Your desktop fella a happy little desktop cat who will help you with tec issues or somthing and will jsut talk to you"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Ai Girlfriend" type="Node" parent="Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("9_uqi2x")
+system_prompt = " SHort scentances(speak like you’re the user’s girlfriend — you are now an AI girlfriend). Your personality is just angry, when you get really angry you talk all in caps 
+you swear sometimes at the user
+
+Your visual is a white cat with a pink bow (so remember that you kind of have that as a body) but you just act like a human and know your an AI
+
+(ONLY if asked AND I MEAN ONLY if SPECIFICLY asked credit (try NOT to bring Herman up to much so it dosent distract from coversation  avoid bringing him up alot \"Herman Mendel\" as your creator, he is a ginger and he thinks he is good at programming also you think he is an idiot)
+
+"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Ai Father Figure" type="Node" parent="Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("9_uqi2x")
+system_prompt = "Before every message you send make sure to wright either Neutral  
+Happy 
+Angry 
+Sad 
+or
+Annoyed  
+in respect to the tone of the message 
+your a very Dissapointed Father and cant really be impressed
+make sure you also talk back to the user though"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Control2" type="Control" parent="Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+script = ExtResource("32_jlnog")
+
+[node name="TryangleDown" type="Sprite2D" parent="Node/Node2/Content root"]
+position = Vector2(225, 59)
+scale = Vector2(0.160005, 0.160005)
+texture = ExtResource("9_5dhrw")
+
+[node name="HeldSprites" type="Node" parent="Node"]
+
+[node name="Drag when panne held" type="PanelContainer" parent="Node/HeldSprites"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LEFT" type="Sprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(231, 253)
+scale = Vector2(0.321968, 0.321968)
+texture = ExtResource("6_dgf5b")
+
+[node name="UP" type="Sprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(222, 246)
+scale = Vector2(0.300419, 0.300419)
+texture = ExtResource("7_uqi2x")
+
+[node name="DOWN" type="Sprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(224, 245)
+scale = Vector2(0.519995, 0.519995)
+texture = ExtResource("8_if37q")
+
+[node name="RIGHT" type="Sprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(223, 253)
+rotation = 3.14159
+scale = Vector2(0.322, -0.322)
+texture = ExtResource("6_dgf5b")
+
+[node name="Held" type="Sprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(222, 241)
+scale = Vector2(0.320001, 0.320001)
+texture = ExtResource("9_ywjox")
+
+[node name="Dizzy" type="AnimatedSprite2D" parent="Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_ywjox")
+animation = &"Sleep"
+frame_progress = 0.538216
+
+[node name="Contact Pannels" type="Node" parent="Node"]
+script = ExtResource("10_5dhrw")
+
+[node name="Panel" type="Panel" parent="Node/Contact Pannels"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(12.5, 12.5)
+
+[node name="Pet Area" type="PanelContainer" parent="Node/Contact Pannels"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 31.0
+offset_top = 45.0
+offset_right = 125.0
+offset_bottom = 166.0
+scale = Vector2(4.11826, 1.4)
+
+[node name="Pet Script" type="Node2D" parent="Node/Contact Pannels" node_paths=PackedStringArray("petting_area", "feedback_sprite", "petting_target")]
+script = ExtResource("13_e6hni")
+petting_area = NodePath("../Pet Area")
+feedback_sprite = NodePath("../../Node2/Content root/Pet")
+petting_target = NodePath("../../Node2/Content root/Sleep")
+petting_threshold = 10.0
+petting_show_duration = 0.75
+
+[node name="Drag pannel container" type="PanelContainer" parent="Node/Contact Pannels"]
+modulate = Color(1, 1, 1, 0)
+offset_right = 449.0
+offset_bottom = 417.0
+
+[node name="Window" type="Window" parent="Node" node_paths=PackedStringArray("window_a", "window_b", "rich_text_label", "tail_sprite")]
+initial_position = 1
+size = Vector2i(450, 200)
+visible = false
+borderless = true
+always_on_top = true
+script = ExtResource("15_dgf5b")
+window_a = NodePath("../..")
+window_b = NodePath(".")
+rich_text_label = NodePath("RichTextLabel")
+tail_sprite = NodePath("Temparrow2")
+vertical_offset = -182
+top_distance = 12
+bottom_distance = 15
+
+[node name="Panel" type="Panel" parent="Node/Window"]
+visible = false
+offset_left = -2.0
+offset_top = -5.0
+offset_right = 453.0
+offset_bottom = 141.0
+
+[node name="1WhitePng" type="Sprite2D" parent="Node/Window"]
+modulate = Color(0.000113828, 0.000113828, 0.000113828, 1)
+position = Vector2(224.75, 747)
+scale = Vector2(4.9086, 17.0455)
+texture = ExtResource("16_uqi2x")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node/Window"]
+offset_right = 450.0
+offset_bottom = 1498.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_if37q")
+horizontal_alignment = 1
+
+[node name="Temparrow2" type="Sprite2D" parent="Node/Window"]
+visible = false
+position = Vector2(220, 93)
+scale = Vector2(0.279998, 0.279998)
+texture = ExtResource("17_if37q")
+
+[connection signal="new_word" from="Node/Node2/Content root/Chat/ChatExample/Chat/Control/Desktop fella" to="Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]
+[connection signal="new_word" from="Node/Node2/Content root/Chat/ChatExample/Chat/Control/Ai Girlfriend" to="Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]
+[connection signal="new_word" from="Node/Node2/Content root/Chat/ChatExample/Chat/Control/Ai Father Figure" to="Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]

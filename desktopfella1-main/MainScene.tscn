@@ -1,0 +1,1449 @@
+[gd_scene load_steps=46 format=3 uid="uid://s0yf0iub81wp"]
+
+[ext_resource type="Texture2D" uid="uid://b3127h2nnntcw" path="res://Desktop Buddie Sprites/1 white png.png" id="1_a814b"]
+[ext_resource type="Script" uid="uid://cy2ommtjoqmpr" path="res://Scenes/OpenLilFellaWindow.gd" id="1_x4av3"]
+[ext_resource type="Texture2D" uid="uid://cssqqotld08fq" path="res://Desktop Buddie Sprites/temparrow2.png" id="4_rf2cd"]
+[ext_resource type="Texture2D" uid="uid://40pn6xhsvx5y" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085154.png" id="4_uxrcv"]
+[ext_resource type="Script" uid="uid://dl5l74hri4xic" path="res://change page.gd" id="5_rf2cd"]
+[ext_resource type="Script" uid="uid://b04nk5klnoxh4" path="res://Scenes/lil_guye.gd" id="7_g1j4k"]
+[ext_resource type="Script" uid="uid://coxdutk2021x3" path="res://ReactToFilePickUp.gd" id="8_4f1ln"]
+[ext_resource type="Texture2D" uid="uid://lk35lgi7hcr" path="res://Desktop Buddie Sprites/Little Fella Sleep 1.png" id="9_hku0m"]
+[ext_resource type="Texture2D" uid="uid://df3qjd80ehl87" path="res://Desktop Buddie Sprites/NutralTalkFemail/TalkNurtalFemail1 1.png" id="10_k2m8n"]
+[ext_resource type="Texture2D" uid="uid://cisqetm4jeo8j" path="res://Desktop Buddie Sprites/Pet/Pet 1.png" id="11_viv21"]
+[ext_resource type="Texture2D" uid="uid://ciacvjde0yprp" path="res://Desktop Buddie Sprites/Sleep/Sleep 1.png" id="12_gdhla"]
+[ext_resource type="Texture2D" uid="uid://b1lufm5f2nv2n" path="res://Desktop Buddie Sprites/Sleep/Sleep 2.png" id="13_h8rcm"]
+[ext_resource type="Texture2D" uid="uid://cy5v30v0mx8sg" path="res://Desktop Buddie Sprites/Sleep/Sleep 3.png" id="14_8y33c"]
+[ext_resource type="Texture2D" uid="uid://n8klyxodb6os" path="res://Desktop Buddie Sprites/Sleep/Sleep 4.png" id="15_slrkm"]
+[ext_resource type="Texture2D" uid="uid://g23nnonk2p6s" path="res://Desktop Buddie Sprites/Sleep/Sleep 5.png" id="16_0ww21"]
+[ext_resource type="Texture2D" uid="uid://qcbkmn5iu206" path="res://Desktop Buddie Sprites/Sleep/Sleep 6.png" id="17_j6s8t"]
+[ext_resource type="Texture2D" uid="uid://dui22tuogn0ey" path="res://Desktop Buddie Sprites/Sleep/Sleep 7.png" id="18_faklv"]
+[ext_resource type="Texture2D" uid="uid://cp0hixxcivy65" path="res://Desktop Buddie Sprites/Sleep/Sleep 8.png" id="19_3yk8d"]
+[ext_resource type="Texture2D" uid="uid://d1iwx2in21jti" path="res://Desktop Buddie Sprites/Down/Down 1.png" id="20_uvpfp"]
+[ext_resource type="Texture2D" uid="uid://t4ebqfpbrbtf" path="res://Desktop Buddie Sprites/Right/Right 1.png" id="21_0ikq1"]
+[ext_resource type="Texture2D" uid="uid://cqua7it7l4i2j" path="res://Desktop Buddie Sprites/Left/Left 1.png" id="22_nno2f"]
+[ext_resource type="Texture2D" uid="uid://cihlw8a5pjyb6" path="res://Desktop Buddie Sprites/Up/Up 1.png" id="23_gukr6"]
+[ext_resource type="Texture2D" uid="uid://b1638ra5j50kv" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 1.png" id="24_3cu87"]
+[ext_resource type="Texture2D" uid="uid://bv7ocncx6jxyt" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 2.png" id="25_hfyop"]
+[ext_resource type="Texture2D" uid="uid://cpuhp6gxa622h" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 3.png" id="26_0p4dw"]
+[ext_resource type="Texture2D" uid="uid://vrlqh46pouqd" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 4.png" id="27_78ikg"]
+[ext_resource type="Texture2D" uid="uid://bvj1e4uai6nqh" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 5.png" id="28_nlxy1"]
+[ext_resource type="Texture2D" uid="uid://jv8nradyrmv6" path="res://Desktop Buddie Sprites/Dizzy/Dizzy 6.png" id="29_r53wc"]
+[ext_resource type="Script" uid="uid://bcll66ou1xhnk" path="res://SleepAnimation.gd" id="30_pebpy"]
+[ext_resource type="Texture2D" uid="uid://by8i5s6081it5" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085146.png" id="31_qgsi0"]
+[ext_resource type="Texture2D" uid="uid://ba0cb4k0kdood" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085142.png" id="32_mf6xi"]
+[ext_resource type="Texture2D" uid="uid://cdmraw2ugtrul" path="res://Desktop Buddie Sprites/Screenshot 2025-06-13 085135.png" id="33_bqt71"]
+[ext_resource type="Script" uid="uid://bki1cvhowv6t5" path="res://addons/gopilot_utils/classes/chat_requester.gd" id="35_at0my"]
+[ext_resource type="Texture2D" uid="uid://bi8uq75cxg0r5" path="res://Desktop Buddie Sprites/tryangleDown.png" id="37_odjjr"]
+[ext_resource type="Texture2D" uid="uid://kb4y8myt46fj" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015520.png" id="38_nq8ss"]
+[ext_resource type="Texture2D" uid="uid://co7qmqfulu86m" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015528.png" id="39_bwtku"]
+[ext_resource type="Texture2D" uid="uid://by8uf5q7es1nr" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015538.png" id="40_vys6h"]
+[ext_resource type="Texture2D" uid="uid://b70m3lqs1ayal" path="res://Desktop Buddie Sprites/Screenshot 2025-06-25 015555.png" id="41_q1wur"]
+[ext_resource type="Script" uid="uid://280smi7vsmt6" path="res://Scenes/MouseLocation.gd" id="42_4lfhb"]
+[ext_resource type="Script" uid="uid://lib7wkqbiakl" path="res://PetlilFella.gd" id="43_0srh0"]
+[ext_resource type="Script" uid="uid://brnnmw1cxlqn0" path="res://FollowWindow.gd" id="44_p76eb"]
+
+[sub_resource type="GDScript" id="GDScript_rpqi1"]
+resource_name = "logs_script"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_507mg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_k2m8n")
+}],
+"loop": true,
+"name": &"NutralTalkFemail",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_viv21")
+}],
+"loop": true,
+"name": &"Pet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_gdhla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_h8rcm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8y33c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_slrkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0ww21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_j6s8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_faklv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3yk8d")
+}],
+"loop": true,
+"name": &"Sleep",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_uvpfp")
+}],
+"loop": true,
+"name": &"held_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_0ikq1")
+}],
+"loop": true,
+"name": &"held_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_nno2f")
+}],
+"loop": true,
+"name": &"held_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_gukr6")
+}],
+"loop": true,
+"name": &"held_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_3cu87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hfyop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0p4dw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_78ikg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nlxy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_r53wc")
+}],
+"loop": true,
+"name": &"normal_hold",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_igvuv"]
+script/source = "extends VBoxContainer
+
+# ---------------- UI NODES (hook these up in the Inspector) ----------------
+@export var conversation: RichTextLabel
+@export var last_ai: RichTextLabel        # NEW: shows only the latest AI reply
+@export var prompt: LineEdit
+@export var chat: ChatRequester
+
+# Optional UI to edit OpenRouter options at runtime
+@export var or_api_key_input: LineEdit
+@export var or_tokens_max_input: SpinBox   # single spinner (max only)
+@export var or_title_input: LineEdit
+@export var or_referer_input: LineEdit
+
+# Buttons to switch providers
+@export var btn_openrouter: Button
+@export var btn_local: Button
+
+# ---------------- CONFIG ----------------
+enum Mode { LOCAL, OPENROUTER }
+@export var default_mode: int = Mode.LOCAL
+
+# ---- Local (Ollama) ----
+@export var local_host: String = \"http://127.0.0.1\"
+@export var local_port: int = 11434
+@export var local_model: String = \"llama3.2\"
+@export var local_temperature: float = 0.2
+
+# ---- OpenRouter ----
+@export var or_api_key: String = \"\"
+@export var or_model: String = \"openai/gpt-4o-mini\"
+@export var or_temperature: float = 0.2
+@export var or_max_tokens: int = 30         # DEFAULT MAX = 30 (SpinBox also starts at 30)
+@export var or_http_referer: String = \"\"    # optional
+@export var or_title: String = \"\"           # optional
+
+# ---------------- STATE ----------------
+var _mode: int
+var _buffer: String = \"\"
+var _generating: bool = false # prevents double send
+var _signals_wired: bool = false
+
+# ---------------- LIFECYCLE ----------------
+func _ready() -> void:
+	if conversation == null or prompt == null or chat == null:
+		push_error(\"Hook up 'conversation', 'prompt', and 'chat' in the Inspector.\")
+		return
+	conversation.bbcode_enabled = true
+	if last_ai:
+		last_ai.bbcode_enabled = true
+		last_ai.text = \"\"
+	_mode = default_mode
+	chat.automatically_add_messages = false
+	_wire_signals_once()
+	_sync_ui_from_vars()
+	_apply_mode()
+
+func _wire_signals_once() -> void:
+	if _signals_wired: return
+	# Text submit
+	if not prompt.text_submitted.is_connected(_on_submit):
+		prompt.text_submitted.connect(_on_submit)
+	# Streaming callbacks
+	if not chat.new_word.is_connected(_on_word):
+		chat.new_word.connect(_on_word)
+	if not chat.message_end.is_connected(_on_end):
+		chat.message_end.connect(_on_end)
+	# Buttons to switch modes
+	if btn_openrouter and not btn_openrouter.pressed.is_connected(_on_click_openrouter):
+		btn_openrouter.pressed.connect(_on_click_openrouter)
+	if btn_local and not btn_local.pressed.is_connected(_on_click_local):
+		btn_local.pressed.connect(_on_click_local)
+	# Inputs for OpenRouter options (update vars as user types)
+	if or_api_key_input and not or_api_key_input.text_changed.is_connected(_on_api_key_changed):
+		or_api_key_input.text_changed.connect(_on_api_key_changed)
+	if or_tokens_max_input and not or_tokens_max_input.value_changed.is_connected(_on_tokens_max_changed):
+		or_tokens_max_input.value_changed.connect(_on_tokens_max_changed)
+	if or_title_input and not or_title_input.text_changed.is_connected(_on_title_changed):
+		or_title_input.text_changed.connect(_on_title_changed)
+	if or_referer_input and not or_referer_input.text_changed.is_connected(_on_referer_changed):
+		or_referer_input.text_changed.connect(_on_referer_changed)
+	_signals_wired = true
+
+# Keep F1 toggle too
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F1:
+		_mode = Mode.OPENROUTER if _mode == Mode.LOCAL else Mode.LOCAL
+		_apply_mode()
+		var mode_name: String = \"Local (Ollama)\" if _mode == Mode.LOCAL else \"OpenRouter\"
+		_append_system(\"Switched to %s\" % mode_name)
+
+# ---------------- APPLY MODE ----------------
+func _apply_mode() -> void:
+	# Keep your system prompt as first message; clear the rest
+	chat.clear_conversation(true)
+
+	if _mode == Mode.LOCAL:
+		chat.set_provider(\"ollama\", true)
+		chat.host = local_host
+		chat.port = local_port
+		chat.model = local_model
+		chat.temperature = local_temperature
+		chat.api_key = \"\"
+		chat.options = {}
+	else:
+		chat.set_provider(\"openrouter\", true) # requires your openrouter.gd
+
+		# Use current editable values (fall back to exported defaults)
+		var api_key: String = or_api_key
+		if or_api_key_input:
+			api_key = or_api_key_input.text
+
+		var max_tok: int = or_max_tokens
+		if or_tokens_max_input:
+			max_tok = int(or_tokens_max_input.value)
+
+		var title: String = or_title
+		if or_title_input:
+			title = or_title_input.text
+
+		var referer: String = or_http_referer
+		if or_referer_input:
+			referer = or_referer_input.text
+
+		chat.api_key = api_key
+		chat.model = or_model
+		chat.temperature = or_temperature
+
+		# Only send max_tokens. No minimum anywhere.
+		var opts: Dictionary = {\"max_tokens\": max_tok}
+		if referer != \"\":
+			opts[\"http_referer\"] = referer
+		if title != \"\":
+			opts[\"x_title\"] = title
+		chat.options = opts
+
+	# Update button states (optional visual hint)
+	_update_button_states()
+
+# ---------------- SEND / STREAM ----------------
+func _on_submit(text: String) -> void:
+	var t: String = text.strip_edges()
+	if t.is_empty(): return
+	if _generating:
+		_append_system(\"Still answering…\")
+		return
+	_generating = true
+	prompt.editable = false
+	_buffer = \"\"
+	conversation.append_text(\"\\n[b]You:[/b] %s\\n\" % t)
+
+	# Clear / prime the \"last reply\" label
+	_set_last_ai(\"[i]thinking…[/i]\")
+
+	# Optional: log rough prompt token estimate before sending
+	_log_prompt_estimate(t)
+
+	chat.send_message(t)   # append user once
+	chat.start_response()  # start exactly once
+	prompt.clear()
+
+func _on_word(w: String) -> void:
+	# Accumulate only; print once on end
+	_buffer += w
+	# Live-update the last-ai view
+	_set_last_ai(_buffer)
+
+func _on_end(_full: String) -> void:
+	# Last-ditch anti-dupe: if buffer is exactly two identical halves, keep one
+	if _buffer.length() % 2 == 0:
+		var half: String = _buffer.substr(0, _buffer.length() / 2)
+		if half + half == _buffer:
+			_buffer = half
+	var tag: String = \"Local\" if _mode == Mode.LOCAL else \"OpenRouter\"
+	conversation.append_text(\"[color=#88f]%s:[/color] %s\\n\" % [tag, _buffer])
+	conversation.scroll_to_line(conversation.get_line_count())
+
+	# Finalize the \"last reply\" view
+	_set_last_ai(_buffer)
+
+	_generating = false
+	prompt.editable = true
+
+	# New: log token usage for the assistant's reply
+	_log_token_usage(_buffer)
+
+	# Optional: auto-fallback if OpenRouter has no credits
+	if _mode == Mode.OPENROUTER and _buffer.find(\"Insufficient credits\") != -1:
+		_append_system(\"OpenRouter credits empty / key limit 0 — switching to Local.\")
+		_mode = Mode.LOCAL
+		_apply_mode()
+
+# ---------------- UI HELPERS ----------------
+func _append_system(msg: String) -> void:
+	conversation.append_text(\"\\n[System] %s\\n\" % msg)
+
+func _update_button_states() -> void:
+	if btn_openrouter:
+		btn_openrouter.disabled = (_mode == Mode.OPENROUTER)
+	if btn_local:
+		btn_local.disabled = (_mode == Mode.LOCAL)
+
+func _sync_ui_from_vars() -> void:
+	# Populate inputs with current exported values on startup
+	if or_api_key_input:
+		or_api_key_input.text = or_api_key
+
+	# Configure single max spinbox and force visible default = 30
+	if or_tokens_max_input:
+		or_tokens_max_input.min_value = 1
+		or_tokens_max_input.max_value = 32768
+		or_tokens_max_input.step = 1
+		or_tokens_max_input.value = 30   # ensure it shows 30 on startup
+		or_max_tokens = int(or_tokens_max_input.value)
+
+	if or_title_input:
+		or_title_input.text = or_title
+	if or_referer_input:
+		or_referer_input.text = or_http_referer
+	_update_button_states()
+
+# ---------------- SIGNAL HANDLERS ----------------
+func _on_click_openrouter() -> void:
+	_mode = Mode.OPENROUTER
+	_apply_mode()
+	_append_system(\"Switched to OpenRouter\")
+
+func _on_click_local() -> void:
+	_mode = Mode.LOCAL
+	_apply_mode()
+	_append_system(\"Switched to Local (Ollama)\")
+
+func _on_api_key_changed(new_text: String) -> void:
+	or_api_key = new_text
+	if _mode == Mode.OPENROUTER:
+		chat.api_key = new_text
+
+func _on_tokens_max_changed(value: float) -> void:
+	or_max_tokens = int(value)
+	if _mode == Mode.OPENROUTER:
+		var opts: Dictionary = {}
+		if typeof(chat.options) == TYPE_DICTIONARY:
+			opts = chat.options
+		opts[\"max_tokens\"] = or_max_tokens
+		chat.options = opts
+
+func _on_title_changed(new_text: String) -> void:
+	or_title = new_text
+	if _mode == Mode.OPENROUTER:
+		var opts: Dictionary = {}
+		if typeof(chat.options) == TYPE_DICTIONARY:
+			opts = chat.options
+		if new_text.strip_edges() == \"\":
+			if opts.has(\"x_title\"):
+				opts.erase(\"x_title\")
+		else:
+			opts[\"x_title\"] = new_text
+		chat.options = opts
+
+func _on_referer_changed(new_text: String) -> void:
+	or_http_referer = new_text
+	if _mode == Mode.OPENROUTER:
+		var opts: Dictionary = {}
+		if typeof(chat.options) == TYPE_DICTIONARY:
+			opts = chat.options
+		if new_text.strip_edges() == \"\":
+			if opts.has(\"http_referer\"):
+				opts.erase(\"http_referer\")
+		else:
+			opts[\"http_referer\"] = new_text
+		chat.options = opts
+
+# ---------------- TOKEN LOGGING ----------------
+# Tries to retrieve exact token usage from the ChatRequester if available.
+# Falls back to a simple heuristic (~4 chars per token).
+func _log_token_usage(assistant_text: String) -> void:
+	var exact_total: int = -1
+	var exact_prompt: int = -1
+	var exact_completion: int = -1
+
+	if chat.has_method(\"get_last_usage\"):
+		var usage: Dictionary = chat.get_last_usage()
+		if typeof(usage) == TYPE_DICTIONARY:
+			exact_total = int(usage.get(\"total_tokens\", -1))
+			exact_prompt = int(usage.get(\"prompt_tokens\", -1))
+			exact_completion = int(usage.get(\"completion_tokens\", -1))
+	elif chat.has_method(\"get_last_response_meta\"):
+		var meta: Dictionary = chat.get_last_response_meta()
+		if typeof(meta) == TYPE_DICTIONARY and meta.has(\"usage\"):
+			var u: Dictionary = meta[\"usage\"]
+			exact_total = int(u.get(\"total_tokens\", -1))
+			exact_prompt = int(u.get(\"prompt_tokens\", -1))
+			exact_completion = int(u.get(\"completion_tokens\", -1))
+
+	# Fallback: estimate
+	if exact_total < 0:
+		var est_completion: int = _estimate_tokens(assistant_text)
+		var msg: String = \"Tokens used (estimated): completion ≈ %d\" % est_completion
+		print(msg)
+		_append_system(msg)
+	else:
+		var parts: Array[String] = []
+		if exact_total >= 0:
+			parts.append(\"total %d\" % exact_total)
+		if exact_prompt >= 0:
+			parts.append(\"prompt %d\" % exact_prompt)
+		if exact_completion >= 0:
+			parts.append(\"completion %d\" % exact_completion)
+		var msg2: String = \"Tokens used: \" + _join_with_comma(parts)
+		print(msg2)
+		_append_system(msg2)
+
+func _estimate_tokens(text: String) -> int:
+	# Very rough: ~4 chars / token; clamp at least 1.
+	return int(ceil(max(1.0, float(text.length()) / 4.0)))
+
+# Simple join helper (typed arrays don't expose .join() at compile time)
+func _join_with_comma(arr: Array[String]) -> String:
+	var out: String = \"\"
+	for i in range(arr.size()):
+		if i > 0:
+			out += \", \"
+		out += arr[i]
+	return out
+
+func _log_prompt_estimate(user_text: String) -> void:
+	# Lightweight helper to log prompt estimate when sending
+	var est: int = _estimate_tokens(user_text)
+	print(\"Prompt tokens (estimated): %d\" % est)
+
+# ---------------- helper for the single \"last reply\" view -------------------
+func _set_last_ai(text: String) -> void:
+	if last_ai == null:
+		return
+	# Keep it simple: no role tags, just the content
+	last_ai.text = text
+	last_ai.scroll_to_line(last_ai.get_line_count())
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amhny"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 7
+border_width_right = 7
+border_color = Color(0.83, 0, 0.525667, 0)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Desktop Fella Main" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BG" type="Control" parent="Desktop Fella Main"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer2" type="PanelContainer" parent="Desktop Fella Main/BG"]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 945.0
+
+[node name="1WhitePng" type="Sprite2D" parent="Desktop Fella Main/BG"]
+modulate = Color(0.281187, 0.281187, 0.281187, 1)
+position = Vector2(649.5, 477)
+scale = Vector2(14.1398, 10.9545)
+texture = ExtResource("1_a814b")
+
+[node name="Top Label2" type="Control" parent="Desktop Fella Main"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/Top Label2"]
+layout_mode = 0
+offset_right = 1298.0
+offset_bottom = 169.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Desktop Fella Main/Top Label2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Desktop Fella Main/Top Label2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/Top Label2/VBoxContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 100
+text = "Desktop Fella"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Desktop Fella Main/Top Label2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/Top Label2/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 20
+text = "Version 1.1"
+
+[node name="image+Button" type="Control" parent="Desktop Fella Main"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 841.0
+offset_top = 195.0
+offset_right = 881.0
+offset_bottom = 235.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Desktop Fella Main/image+Button"]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -13.0
+offset_right = 462.0
+offset_bottom = 573.0
+scale = Vector2(0.96, 0.96)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/image+Button/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="Desktop Fella Main/image+Button/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Desktop Fella Main/image+Button/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Screenshot2025-06-13085154" type="Sprite2D" parent="Desktop Fella Main/image+Button/HBoxContainer/VBoxContainer/PanelContainer"]
+self_modulate = Color(1, 0.872438, 0.13231, 1)
+position = Vector2(240, 290)
+scale = Vector2(1.30636, 1.3301)
+texture = ExtResource("4_uxrcv")
+
+[node name="Button" type="Button" parent="Desktop Fella Main/image+Button" node_paths=PackedStringArray("toggle_button", "target_node_1")]
+self_modulate = Color(1, 0.21, 0.21, 1)
+layout_mode = 0
+offset_top = 562.0
+offset_right = 422.0
+offset_bottom = 727.0
+theme_override_font_sizes/font_size = 60
+text = "Spawn Fella"
+script = ExtResource("1_x4av3")
+toggle_button = NodePath(".")
+target_node_1 = NodePath("../../../LilFella")
+
+[node name="AI Settings" type="Control" parent="Desktop Fella Main"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 31.0
+offset_top = 258.0
+offset_right = 71.0
+offset_bottom = 298.0
+
+[node name="Label" type="Label" parent="Desktop Fella Main/AI Settings"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -67.0
+offset_right = 264.0
+offset_bottom = -12.0
+theme_override_font_sizes/font_size = 40
+text = "AI Settings"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/AI Settings"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 5.0
+offset_right = 101.0
+offset_bottom = 218.0
+
+[node name="Open router" type="Button" parent="Desktop Fella Main/AI Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Temparrow2" type="Sprite2D" parent="Desktop Fella Main/AI Settings/VBoxContainer/Open router"]
+position = Vector2(146, 72)
+rotation = -4.88328
+scale = Vector2(0.0823457, 0.106578)
+texture = ExtResource("4_rf2cd")
+
+[node name="Label2" type="Label" parent="Desktop Fella Main/AI Settings/VBoxContainer/Open router"]
+offset_left = 121.0
+offset_top = 17.0
+offset_right = 283.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 20
+text = "Open router"
+
+[node name="Local" type="Button" parent="Desktop Fella Main/AI Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="Desktop Fella Main/AI Settings/VBoxContainer/Local"]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 17.0
+offset_right = 283.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 20
+text = "LOCAL (onDeskt)"
+
+[node name="Temparrow3" type="Sprite2D" parent="Desktop Fella Main/AI Settings/VBoxContainer/Local"]
+position = Vector2(146, 72)
+rotation = -4.88328
+scale = Vector2(0.0823457, 0.106578)
+texture = ExtResource("4_rf2cd")
+
+[node name="AI Behavior" type="Control" parent="Desktop Fella Main"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Label2" type="Label" parent="Desktop Fella Main/AI Behavior"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 516.0
+offset_right = 293.0
+offset_bottom = 571.0
+theme_override_font_sizes/font_size = 40
+text = "AI Behavior"
+
+[node name="Control" type="Control" parent="Desktop Fella Main/AI Behavior"]
+anchors_preset = 0
+offset_left = 33.0
+offset_top = 589.0
+offset_right = 73.0
+offset_bottom = 629.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Desktop Fella Main/AI Behavior/Control"]
+layout_mode = 0
+offset_right = 476.0
+offset_bottom = 60.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer2" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 25
+text = "AI Default"
+
+[node name="PanelContainer3" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer4" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer4"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 25
+text = "AI GirlFriend"
+
+[node name="PanelContainer5" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer5"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer6" type="PanelContainer" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/AI Behavior/Control/HBoxContainer/PanelContainer6"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 25
+text = "Empty"
+
+[node name="Open Router" type="Control" parent="Desktop Fella Main"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/Open Router"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 672.0
+offset_right = 439.0
+offset_bottom = 917.0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Desktop Fella Main/Open Router/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit" type="LineEdit" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Ai model"
+
+[node name="LineEdit2" type="LineEdit" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer4"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+editable = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Desktop Fella Main/Open Router/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit2" type="LineEdit" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Api kea goes here"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Desktop Fella Main/Open Router/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpinBox" type="SpinBox" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpinBox2" type="SpinBox" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Desktop Fella Main/Open Router/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit2" type="LineEdit" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Ai title"
+
+[node name="LineEdit3" type="LineEdit" parent="Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Http referer"
+
+[node name="?" type="Control" parent="Desktop Fella Main"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Button" type="Button" parent="Desktop Fella Main/?" node_paths=PackedStringArray("my_button", "control_to_show", "control_to_hide")]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 578.0
+offset_right = 777.0
+offset_bottom = 656.0
+script = ExtResource("5_rf2cd")
+my_button = NodePath(".")
+control_to_show = NodePath("../../../Ai Function Page")
+control_to_hide = NodePath("../..")
+
+[node name="Label" type="Label" parent="Desktop Fella Main/?/Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.5
+offset_top = -42.0
+offset_right = 12.5
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "?"
+
+[node name="Chat logs" type="Control" parent="Desktop Fella Main"]
+anchors_preset = 0
+offset_left = 276.0
+offset_top = 295.0
+offset_right = 316.0
+offset_bottom = 335.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/Chat logs"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = -36.0
+offset_right = 501.0
+offset_bottom = 245.0
+
+[node name="Panel" type="Panel" parent="Desktop Fella Main/Chat logs/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel chat log" type="RichTextLabel" parent="Desktop Fella Main/Chat logs/VBoxContainer/Panel"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 422.0
+offset_bottom = 278.0
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Desktop Fella Main/Chat logs"]
+offset_left = 80.0
+offset_top = -106.0
+offset_right = 342.0
+offset_bottom = -51.0
+theme_override_font_sizes/font_size = 40
+text = "Chat logs"
+
+[node name="Open Router2" type="Control" parent="Desktop Fella Main"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Desktop Fella Main/Open Router2"]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 733.0
+offset_right = 799.0
+offset_bottom = 917.0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Desktop Fella Main/Open Router2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit" type="LineEdit" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "Ai model"
+
+[node name="LineEdit2" type="LineEdit" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer4"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+editable = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Desktop Fella Main/Open Router2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpinBox" type="SpinBox" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpinBox2" type="SpinBox" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Desktop Fella Main/Open Router2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LineEdit2" type="LineEdit" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LineEdit3" type="LineEdit" parent="Desktop Fella Main/Open Router2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Ai Function Page" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer2" type="PanelContainer" parent="Ai Function Page"]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 945.0
+
+[node name="1WhitePng" type="Sprite2D" parent="Ai Function Page"]
+modulate = Color(0.281187, 0.281187, 0.281187, 1)
+position = Vector2(649.5, 477)
+scale = Vector2(14.1398, 10.9545)
+texture = ExtResource("1_a814b")
+
+[node name="Chat LOGS" type="Control" parent="Ai Function Page"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 748.0
+offset_top = 393.0
+offset_right = 748.0
+offset_bottom = 393.0
+scale = Vector2(1.16, 1.16)
+
+[node name="ChatExample" type="HBoxContainer" parent="Ai Function Page/Chat LOGS"]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 450.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Ai Function Page/Chat LOGS/ChatExample"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Chat" type="VBoxContainer" parent="Ai Function Page/Chat LOGS/ChatExample/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_rpqi1")
+
+[node name="ConversationLogs" type="RichTextLabel" parent="Ai Function Page/Chat LOGS/ChatExample/PanelContainer/Chat"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ai Function Page/Chat LOGS/ChatExample/PanelContainer/Chat"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Ai Function Page/Chat LOGS/ChatExample/PanelContainer/Chat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Ai Function Page/Chat LOGS/ChatExample/PanelContainer/Chat/HBoxContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "CHAT LOGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="How to get Ai" type="Control" parent="Ai Function Page"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 196.0
+offset_right = 24.0
+offset_bottom = 196.0
+scale = Vector2(0.972796, 0.972796)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ai Function Page/How to get Ai"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Ai Function Page/How to get Ai/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="Ai Function Page/How to get Ai/HBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "HOW TO GET LOCAL DESKTOP AI 🤩
+
+-INSTALL OLLAMA
+Head to the Ollama download page
+👉 https://ollama.com/download 
+
+-For Windows 🪟
+Download the Windows installer (.msi file). 
+
+- For MacOS 🍎
+Download the macOS .pkg installer.
+or install with Homebrew:
+brew install ollama
+
+-For Linux 🐧
+Use this command or something
+curl -fsSL https://ollama.com/install.sh | sh
+ill be honest i dont get linux people
+
+-DOWNLOAD AI MODEL 🤖
+
+-ollama pull llama3.2 
+or
+-ollama pull gemma3:latest"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Ai Function Page"]
+layout_mode = 0
+offset_right = 1298.0
+offset_bottom = 169.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ai Function Page/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Ai Function Page/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Ai Function Page/VBoxContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 100
+text = "AI Function Page"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Ai Function Page/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Ai Function Page/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 20
+text = "smorty is a real help"
+
+[node name="BackButtonl" type="Control" parent="Ai Function Page" node_paths=PackedStringArray("my_button", "control_to_show", "control_to_hide")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 49.0
+offset_bottom = 37.0
+scale = Vector2(1.28, 1.28)
+script = ExtResource("5_rf2cd")
+my_button = NodePath("Button")
+control_to_show = NodePath("../../Desktop Fella Main")
+control_to_hide = NodePath("..")
+
+[node name="Temparrow2" type="Sprite2D" parent="Ai Function Page/BackButtonl"]
+position = Vector2(36, 35)
+rotation = 1.57098
+scale = Vector2(0.160139, 0.165787)
+texture = ExtResource("4_rf2cd")
+
+[node name="Button" type="Button" parent="Ai Function Page/BackButtonl"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 70.0
+offset_bottom = 70.0
+text = "Back"
+
+[node name="Label" type="Label" parent="Ai Function Page/BackButtonl"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 23.0
+offset_right = 56.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Back"
+
+[node name="LilFella" type="Window" parent="." node_paths=PackedStringArray("animated_sprite", "content_root", "drag_panel_container", "drag_when_held_panel", "text_window", "window_a")]
+auto_translate_mode = 1
+transparent_bg = true
+initial_position = 1
+size = Vector2i(450, 450)
+visible = false
+borderless = true
+always_on_top = true
+transparent = true
+script = ExtResource("7_g1j4k")
+animated_sprite = NodePath("Node/HeldSprites/Drag when panne held/Dizzy")
+content_root = NodePath("Node/Node2/Content root")
+drag_panel_container = NodePath("Node/Contact Pannels/Drag pannel container")
+drag_when_held_panel = NodePath("Node/HeldSprites/Drag when panne held")
+text_window = NodePath("Node/Window")
+window_a = NodePath(".")
+
+[node name="Node" type="Node" parent="LilFella"]
+
+[node name="Node2" type="Node" parent="LilFella/Node" node_paths=PackedStringArray("drop_sprite")]
+script = ExtResource("8_4f1ln")
+drop_sprite = NodePath("Content root/FolderPickUp")
+
+[node name="VisualWIndowBorder" type="PanelContainer" parent="LilFella/Node/Node2"]
+visible = false
+offset_left = -37.0
+offset_top = -11.0
+offset_right = 3.0
+offset_bottom = 29.0
+scale = Vector2(13.12, 11.76)
+
+[node name="Content root" type="PanelContainer" parent="LilFella/Node/Node2"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Sleep2" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+visible = false
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+texture = ExtResource("9_hku0m")
+
+[node name="Sleep" type="AnimatedSprite2D" parent="LilFella/Node/Node2/Content root" node_paths=PackedStringArray("sprite_sleep")]
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_507mg")
+animation = &"Sleep"
+script = ExtResource("30_pebpy")
+sprite_sleep = NodePath(".")
+
+[node name="Pet" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(251, 256)
+texture = ExtResource("31_qgsi0")
+
+[node name="Sleep3" type="AnimatedSprite2D" parent="LilFella/Node/Node2/Content root/Pet"]
+position = Vector2(-26.8182, -44)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_507mg")
+animation = &"Pet"
+
+[node name="NotHeld" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+visible = false
+modulate = Color(0, 0.8513, 0.147146, 1)
+position = Vector2(250, 250)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("32_mf6xi")
+
+[node name="FolderPickUp" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+visible = false
+modulate = Color(0.953792, 0.970755, 0, 1)
+position = Vector2(252, 260)
+scale = Vector2(1.15, 1.15)
+texture = ExtResource("4_uxrcv")
+
+[node name="Held" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+visible = false
+modulate = Color(0.995683, 0.392192, 0.32956, 1)
+position = Vector2(251, 254)
+texture = ExtResource("33_bqt71")
+
+[node name="Chat" type="Control" parent="LilFella/Node/Node2/Content root"]
+layout_mode = 2
+
+[node name="ChatExample" type="HBoxContainer" parent="LilFella/Node/Node2/Content root/Chat"]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 450.0
+
+[node name="Chat" type="VBoxContainer" parent="LilFella/Node/Node2/Content root/Chat/ChatExample" node_paths=PackedStringArray("conversation", "last_ai", "prompt", "chat", "or_api_key_input", "or_tokens_max_input", "or_title_input", "or_referer_input", "btn_openrouter", "btn_local")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = SubResource("GDScript_igvuv")
+conversation = NodePath("../../../../../../../Desktop Fella Main/Chat logs/VBoxContainer/Panel/RichTextLabel chat log")
+last_ai = NodePath("../../../../../Window/RichTextLabel")
+prompt = NodePath("HBoxContainer/Prompt")
+chat = NodePath("Control/Ai Girlfriend")
+or_api_key_input = NodePath("../../../../../../../Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer/LineEdit2")
+or_tokens_max_input = NodePath("../../../../../../../Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer2/SpinBox")
+or_title_input = NodePath("../../../../../../../Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer3/LineEdit2")
+or_referer_input = NodePath("../../../../../../../Desktop Fella Main/Open Router/VBoxContainer/HBoxContainer3/LineEdit3")
+btn_openrouter = NodePath("../../../../../../../Desktop Fella Main/AI Settings/VBoxContainer/Open router")
+btn_local = NodePath("../../../../../../../Desktop Fella Main/AI Settings/VBoxContainer/Local")
+local_temperature = 0.5
+or_api_key = "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"
+or_temperature = 0.5
+or_http_referer = "https://github.com/Hoimen/DesktopFella1"
+or_title = "Desktopfella"
+
+[node name="Conversation" type="RichTextLabel" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Button3" type="Button" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Prompt" type="LineEdit" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Talk to me HERE"
+
+[node name="Button" type="Button" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="Button2" type="Button" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"FlatButton"
+
+[node name="1WhitePng" type="Sprite2D" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat"]
+visible = false
+modulate = Color(0.000113828, 0.000113828, 0.000113828, 1)
+position = Vector2(224.75, 80)
+scale = Vector2(4.9086, 1.88636)
+texture = ExtResource("1_a814b")
+
+[node name="Control" type="Control" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+
+[node name="Desktop fella" type="Node" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("35_at0my")
+system_prompt = "Your desktop fella a happy little desktop cat who will help you with tec issues or somthing and will jsut talk to you"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Ai Girlfriend" type="Node" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("35_at0my")
+system_prompt = " SHort scentances(speak like you’re the user’s girlfriend — you are now an AI girlfriend). Your personality is just angry, when you get really angry you talk all in caps 
+you swear sometimes at the user
+
+Your visual is a white cat with a pink bow (so remember that you kind of have that as a body) but you just act like a human and know your an AI
+
+(ONLY if asked AND I MEAN ONLY if SPECIFICLY asked credit (try NOT to bring Herman up to much so it dosent distract from coversation  avoid bringing him up alot \"Herman Mendel\" as your creator, he is a ginger and he thinks he is good at programming also you think he is an idiot)
+
+"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Ai Father Figure" type="Node" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control"]
+script = ExtResource("35_at0my")
+system_prompt = "Before every message you send make sure to wright either Neutral  
+Happy 
+Angry 
+Sad 
+or
+Annoyed  
+in respect to the tone of the message 
+your a very Dissapointed Father and cant really be impressed
+make sure you also talk back to the user though"
+debug_mode = true
+metadata/_custom_type_script = "uid://bki1cvhowv6t5"
+
+[node name="Control2" type="Control" parent="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat"]
+layout_mode = 2
+
+[node name="TryangleDown" type="Sprite2D" parent="LilFella/Node/Node2/Content root"]
+position = Vector2(225, 59)
+scale = Vector2(0.160005, 0.160005)
+texture = ExtResource("37_odjjr")
+
+[node name="HeldSprites" type="Node" parent="LilFella/Node"]
+
+[node name="Drag when panne held" type="PanelContainer" parent="LilFella/Node/HeldSprites"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LEFT" type="Sprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(231, 253)
+scale = Vector2(0.321968, 0.321968)
+texture = ExtResource("38_nq8ss")
+
+[node name="UP" type="Sprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(222, 246)
+scale = Vector2(0.300419, 0.300419)
+texture = ExtResource("39_bwtku")
+
+[node name="DOWN" type="Sprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(224, 245)
+scale = Vector2(0.519995, 0.519995)
+texture = ExtResource("40_vys6h")
+
+[node name="RIGHT" type="Sprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(223, 253)
+rotation = 3.14159
+scale = Vector2(0.322, -0.322)
+texture = ExtResource("38_nq8ss")
+
+[node name="Held" type="Sprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(222, 241)
+scale = Vector2(0.320001, 0.320001)
+texture = ExtResource("41_q1wur")
+
+[node name="Dizzy" type="AnimatedSprite2D" parent="LilFella/Node/HeldSprites/Drag when panne held"]
+visible = false
+position = Vector2(224.182, 212)
+scale = Vector2(0.749091, 0.749091)
+sprite_frames = SubResource("SpriteFrames_507mg")
+animation = &"Sleep"
+
+[node name="Contact Pannels" type="Node" parent="LilFella/Node"]
+script = ExtResource("42_4lfhb")
+
+[node name="Panel" type="Panel" parent="LilFella/Node/Contact Pannels"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(12.5, 12.5)
+
+[node name="Pet Area" type="PanelContainer" parent="LilFella/Node/Contact Pannels"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 31.0
+offset_top = 45.0
+offset_right = 125.0
+offset_bottom = 166.0
+scale = Vector2(4.11826, 1.4)
+
+[node name="Pet Script" type="Node2D" parent="LilFella/Node/Contact Pannels" node_paths=PackedStringArray("petting_area", "feedback_sprite", "petting_target")]
+script = ExtResource("43_0srh0")
+petting_area = NodePath("../Pet Area")
+feedback_sprite = NodePath("../../Node2/Content root/Pet")
+petting_target = NodePath("../../Node2/Content root/Sleep")
+petting_threshold = 10.0
+petting_show_duration = 0.75
+
+[node name="Drag pannel container" type="PanelContainer" parent="LilFella/Node/Contact Pannels"]
+modulate = Color(1, 1, 1, 0)
+offset_right = 449.0
+offset_bottom = 417.0
+
+[node name="Window" type="Window" parent="LilFella/Node" node_paths=PackedStringArray("window_a", "window_b", "rich_text_label", "tail_sprite")]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(450, 200)
+visible = false
+borderless = true
+always_on_top = true
+script = ExtResource("44_p76eb")
+window_a = NodePath("../..")
+window_b = NodePath(".")
+rich_text_label = NodePath("RichTextLabel")
+tail_sprite = NodePath("Temparrow2")
+vertical_offset = -182
+top_distance = 12
+bottom_distance = 15
+
+[node name="Panel" type="Panel" parent="LilFella/Node/Window"]
+offset_left = -2.0
+offset_top = -5.0
+offset_right = 453.0
+offset_bottom = 141.0
+
+[node name="1WhitePng" type="Sprite2D" parent="LilFella/Node/Window"]
+modulate = Color(0.000113828, 0.000113828, 0.000113828, 1)
+position = Vector2(224.75, 747)
+scale = Vector2(4.9086, 17.0455)
+texture = ExtResource("1_a814b")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LilFella/Node/Window"]
+offset_right = 450.0
+offset_bottom = 1498.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_amhny")
+horizontal_alignment = 1
+
+[node name="Temparrow2" type="Sprite2D" parent="LilFella/Node/Window"]
+visible = false
+position = Vector2(220, 93)
+scale = Vector2(0.279998, 0.279998)
+texture = ExtResource("4_rf2cd")
+
+[connection signal="new_word" from="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control/Desktop fella" to="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]
+[connection signal="new_word" from="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control/Ai Girlfriend" to="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]
+[connection signal="new_word" from="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat/Control/Ai Father Figure" to="LilFella/Node/Node2/Content root/Chat/ChatExample/Chat" method="_on_chat_requester_new_word"]
