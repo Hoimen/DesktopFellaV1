@@ -1724,8 +1724,6 @@ offset_top = 3.0
 offset_right = 445.0
 offset_bottom = 278.0
 size_flags_vertical = 3
-focus_mode = 2
-selection_enabled = true
 
 [node name="Label" type="Label" parent="Desktop Fella Main/Chat logs"]
 layout_mode = 0
@@ -1793,12 +1791,11 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 placeholder_text = "Local host input"
 
-[node name="LilFella" type="Window" parent="." node_paths=PackedStringArray("animated_sprite", "content_root", "drag_panel_container", "drag_when_held_panel", "text_window", "window_a", "edge_top_sprite", "edge_left_sprite", "edge_right_sprite")]
+[node name="LilFella" type="Window" parent="." node_paths=PackedStringArray("animated_sprite", "content_root", "drag_panel_container", "drag_when_held_panel", "text_window", "window_a")]
 auto_translate_mode = 1
 transparent_bg = true
 initial_position = 1
 size = Vector2i(450, 450)
-visible = false
 borderless = true
 always_on_top = true
 transparent = true
@@ -1809,10 +1806,6 @@ drag_panel_container = NodePath("Node/Contact Pannels/Drag pannel container")
 drag_when_held_panel = NodePath("Node/HeldSprites/Drag when panne held")
 text_window = NodePath("Node/Window")
 window_a = NodePath(".")
-edge_top_sprite = NodePath("Node/Ouch Up")
-edge_left_sprite = NodePath("Node/Ouch left")
-edge_right_sprite = NodePath("Node/Ouch right")
-edge_max_show_time = 0.5
 
 [node name="Node" type="Node" parent="LilFella"]
 
@@ -2346,27 +2339,6 @@ visible = false
 position = Vector2(220, 93)
 scale = Vector2(0.279998, 0.279998)
 texture = ExtResource("4_rf2cd")
-
-[node name="Ouch Up" type="Sprite2D" parent="LilFella/Node"]
-visible = false
-modulate = Color(0.981099, 0.37469, 0.407618, 1)
-position = Vector2(237, 144)
-scale = Vector2(0.640449, 0.628821)
-texture = ExtResource("22_v5035")
-
-[node name="Ouch right" type="Sprite2D" parent="LilFella/Node"]
-visible = false
-modulate = Color(0.981099, 0.37469, 0.407618, 1)
-position = Vector2(270, 229)
-scale = Vector2(0.640449, 0.628821)
-texture = ExtResource("21_at0my")
-
-[node name="Ouch left" type="Sprite2D" parent="LilFella/Node"]
-visible = false
-modulate = Color(0.981099, 0.37469, 0.407618, 1)
-position = Vector2(172, 231)
-scale = Vector2(0.640449, 0.628821)
-texture = ExtResource("20_sdsqc")
 
 [node name="AI Commands Page" type="Control" parent="."]
 visible = false

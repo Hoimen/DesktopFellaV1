@@ -9,6 +9,13 @@ extends Node
 @export var text_window: Window
 @export var window_a: Window
 
+# Edge sprites (plain images) - PRIORITY
+@export var edge_top_sprite: Sprite2D
+@export var edge_left_sprite: Sprite2D
+@export var edge_right_sprite: Sprite2D
+
+# Max time an edge sprite may stay visible (seconds)
+@export var edge_max_show_time: float = 2.0
 
 const MOVEMENT_THRESHOLD := 5.0
 const INACTIVITY_TIMEOUT := 0.3
@@ -30,12 +37,22 @@ var drag_offset_to_center: Vector2
 
 var playing_directional := false
 
+# Edge state
+enum EdgeTouch { NONE, TOP, LEFT, RIGHT }
+var edge_time_on_wall: float = 0.0
+var edge_can_trigger: bool = true
+var edge_current: int = EdgeTouch.NONE
+
 func _ready():
 	_stop_animation()
+
 	if animated_sprite:
 		animated_sprite.visible = false
 	if hide_when_held:
 		hide_when_held.visible = true
+
+	_hide_edge_sprites()
+
 	last_mouse_pos = Vector2(DisplayServer.mouse_get_position())
 
 	var window = get_window()
@@ -65,13 +82,24 @@ func _process(delta):
 	var window = get_window()
 	var usable_rect := DisplayServer.screen_get_usable_rect()
 
+	# -------------------------
+	# 1) MOVE WINDOW FIRST
+	# -------------------------
 	if is_holding_window:
 		drag_window_center = mouse_pos - drag_offset_to_center
 		var half_width = window.size.x * 0.5
+		var half_height = window.size.y * 0.5
+
+		# Clamp X and Y so it cannot go off-screen (no clip)
 		drag_window_center.x = clamp(
 			drag_window_center.x,
 			usable_rect.position.x + half_width,
 			usable_rect.position.x + usable_rect.size.x - half_width
+		)
+		drag_window_center.y = clamp(
+			drag_window_center.y,
+			usable_rect.position.y + half_height,
+			usable_rect.position.y + usable_rect.size.y - half_height
 		)
 
 		window.size.x = min_window_width
@@ -91,6 +119,7 @@ func _process(delta):
 
 		_keep_window_on_screen(window, usable_rect)
 		_update_drag_when_held_shift(window)
+
 	else:
 		var center_x = window.position.x + window.size.x * 0.5
 		window.size.x = original_window_size.x
@@ -98,6 +127,10 @@ func _process(delta):
 
 		_keep_window_on_screen(window, usable_rect)
 		_update_drag_when_held_shift(window)
+
+		# Prevent window from going above top edge (no clip)
+		if window.position.y < usable_rect.position.y:
+			window.position.y = usable_rect.position.y
 
 		if window.position.y + window.size.y < usable_rect.position.y + usable_rect.size.y:
 			fall_speed = min(fall_speed + GRAVITY * delta, MAX_FALL_SPEED)
@@ -115,24 +148,116 @@ func _process(delta):
 	if time_since_last_move >= INACTIVITY_TIMEOUT and not is_falling and not is_holding_window:
 		_stop_animation()
 
-	# Sprite visibility
-	if is_holding_window or is_falling:
-		if animated_sprite:
-			animated_sprite.visible = true
+	# -------------------------
+	# 2) EDGE SPRITES:
+	# - show while touching wall
+	# - BUT never longer than edge_max_show_time per contact
+	# - must move away (no edges) to re-arm
+	# -------------------------
+	var touched := _get_touched_edge(window, usable_rect)
+
+	# If fully away from all priority edges: reset timer + re-arm
+	if touched == EdgeTouch.NONE:
+		edge_time_on_wall = 0.0
+		edge_current = EdgeTouch.NONE
+		edge_can_trigger = true
 	else:
+		# If we are touching an edge:
+		# If we are allowed to trigger, start tracking which edge we hit first.
+		if edge_can_trigger:
+			edge_current = touched
+		# Increase "time on wall" while touching ANY priority edge
+		edge_time_on_wall += delta
+
+	# Decide if edge sprite should be active:
+	# It is active ONLY when:
+	# - touching an edge
+	# - armed (edge_can_trigger true)
+	# - and hasn't exceeded max show time yet
+	var edge_override_active := false
+	if touched != EdgeTouch.NONE and edge_can_trigger and edge_time_on_wall <= edge_max_show_time:
+		edge_override_active = true
+
+	# If we've exceeded max time while still touching, lock it until moved away
+	if touched != EdgeTouch.NONE and edge_time_on_wall > edge_max_show_time:
+		edge_can_trigger = false
+		edge_override_active = false
+
+	# Apply visuals
+	if edge_override_active:
+		_show_edge_sprite(edge_current)
+
+		# Edge sprites override everything
 		if animated_sprite:
 			animated_sprite.visible = false
+			animated_sprite.stop()
+	else:
+		_hide_edge_sprites()
 
-	_update_content_visibility()
+		# Normal sprite rules (original)
+		if is_holding_window or is_falling:
+			if animated_sprite:
+				animated_sprite.visible = true
+		else:
+			if animated_sprite:
+				animated_sprite.visible = false
+
+	_update_content_visibility(edge_override_active)
 	last_mouse_pos = mouse_pos
 
+func _get_touched_edge(window: Window, usable_rect: Rect2i) -> int:
+	var left_touch := window.position.x <= usable_rect.position.x
+	var right_touch := window.position.x + window.size.x >= usable_rect.position.x + usable_rect.size.x
+	var top_touch := window.position.y <= usable_rect.position.y
+	# bottom ignored intentionally
+
+	# Priority: top > left > right
+	if top_touch:
+		return EdgeTouch.TOP
+	if left_touch:
+		return EdgeTouch.LEFT
+	if right_touch:
+		return EdgeTouch.RIGHT
+	return EdgeTouch.NONE
+
+func _show_edge_sprite(which: int) -> void:
+	_hide_edge_sprites()
+
+	match which:
+		EdgeTouch.TOP:
+			if edge_top_sprite:
+				edge_top_sprite.visible = true
+		EdgeTouch.LEFT:
+			if edge_left_sprite:
+				edge_left_sprite.visible = true
+		EdgeTouch.RIGHT:
+			if edge_right_sprite:
+				edge_right_sprite.visible = true
+
+func _hide_edge_sprites() -> void:
+	if edge_top_sprite:
+		edge_top_sprite.visible = false
+	if edge_left_sprite:
+		edge_left_sprite.visible = false
+	if edge_right_sprite:
+		edge_right_sprite.visible = false
+
 func _keep_window_on_screen(window, usable_rect):
+	# Clamp X
 	if window.position.x < usable_rect.position.x:
 		window.position.x = usable_rect.position.x
 
 	var right = window.position.x + window.size.x
 	if right > usable_rect.position.x + usable_rect.size.x:
 		window.position.x = usable_rect.position.x + usable_rect.size.x - window.size.x
+
+	# Clamp Y (top + bottom) so it never clips off screen
+	if window.position.y < usable_rect.position.y:
+		window.position.y = usable_rect.position.y
+
+	var bottom = window.position.y + window.size.y
+	if bottom > usable_rect.position.y + usable_rect.size.y:
+		window.position.y = usable_rect.position.y + usable_rect.size.y - window.size.y
 
 func _update_drag_when_held_shift(window):
 	if not drag_when_held_panel:
@@ -168,29 +293,28 @@ func _stop_animation():
 		animated_sprite.visible = false
 	playing_directional = false
 
-func _update_content_visibility():
+func _update_content_visibility(edge_override_active: bool):
 	if not content_root:
 		return
 
-	var is_animating := animated_sprite and animated_sprite.visible and animated_sprite.is_playing()
+	var normal_animating := animated_sprite and animated_sprite.visible and animated_sprite.is_playing()
+	var is_animating := normal_animating or edge_override_active
+
 	content_root.visible = not is_animating
 
 	if hide_when_held:
 		hide_when_held.visible = not is_animating
 
 	if text_window:
-		# Base rule: hide while dragging/falling
 		var should_show := not (is_holding_window or is_falling)
+		should_show = should_show and not edge_override_active
 
-		# If "Window A" exists, also require it to be visible
 		if window_a:
-			# Guard for both property and method (works across Godot 4.x)
 			var a_visible := true
 			if "visible" in window_a:
 				a_visible = a_visible and window_a.visible
 			if "is_visible" in window_a:
 				a_visible = a_visible and window_a.is_visible()
-
 			should_show = should_show and a_visible
 
 		if should_show:
